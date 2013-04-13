@@ -23,21 +23,21 @@ public class GuiInGame
 		
 		if(i == 0)
 		{
-			selected.draw(30, 30);
-			unSelected.draw(30 + 68, 30);
-			unSelected.draw(30 + 68 * 2, 30);
+			selected.draw(30, 720 - 74);
+			unSelected.draw(30 + 68, 720 - 74);
+			unSelected.draw(30 + 68 * 2, 720 - 74);
 		}
 		else if(i == 1)
 		{
-			unSelected.draw(30, 30);
-			selected.draw(30 + 68, 30);
-			unSelected.draw(30 + 68 * 2, 30);
+			unSelected.draw(30, 720 - 74);
+			selected.draw(30 + 68, 720 - 74);
+			unSelected.draw(30 + 68 * 2, 720 - 74);
 		}
 		else if(i == 2)
 		{
-			unSelected.draw(30, 30);
-			unSelected.draw(30 + 68, 30);
-			selected.draw(30 + 68 * 2, 30);
+			unSelected.draw(30, 720 - 74);
+			unSelected.draw(30 + 68, 720 - 74);
+			selected.draw(30 + 68 * 2, 720 - 74);
 		}
 	}
 }

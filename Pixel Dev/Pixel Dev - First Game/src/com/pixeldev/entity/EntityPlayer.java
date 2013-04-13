@@ -7,6 +7,8 @@ public class EntityPlayer extends Entity2
 	public Power[] powers = new Power[3];
 	public int currentPower;
 	
+	public int money = 0;
+	
 	public EntityPlayer(int mLife) 
 	{
 		super(mLife);

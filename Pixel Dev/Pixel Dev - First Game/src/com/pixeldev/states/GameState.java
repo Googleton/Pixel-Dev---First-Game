@@ -15,7 +15,7 @@ public class GameState extends BasicGameState {
 	public static final int ID = 1;
 
 	private GuiInGame gig = new GuiInGame();
-	public EntityPlayer player = new EntityPlayer(20);
+	public EntityPlayer player = new EntityPlayer(5000);
 
 	/** @return l'id du status de jeu **/
 	@Override
@@ -34,6 +34,7 @@ public class GameState extends BasicGameState {
 	public void render(GameContainer container, StateBasedGame game, Graphics g) throws SlickException
 	{
 		gig.drawScreen(player.currentPower);
+//		g.drawString(String.valueOf(player.money), , y)
 	}
 
 	/** Mets a jour ( 1 update / frame ) **/
