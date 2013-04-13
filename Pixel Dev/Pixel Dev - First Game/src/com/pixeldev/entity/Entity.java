@@ -11,7 +11,7 @@ public class Entity {
 		
 		this.entityName = name;
 		
-	}
+	}//
 	
 	public void setLife(int l){
 		this.life = l;
