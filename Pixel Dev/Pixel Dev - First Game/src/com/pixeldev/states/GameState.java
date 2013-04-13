@@ -13,8 +13,7 @@ import com.pixeldev.guis.GuiInGame;
 
 public class GameState extends BasicGameState {
 	public static final int ID = 1;
-	
-	public Image surprise;
+
 	private GuiInGame gig = new GuiInGame();
 	public EntityPlayer player = new EntityPlayer(20);
 
@@ -28,25 +27,20 @@ public class GameState extends BasicGameState {
 	public void init(GameContainer container, StateBasedGame game)
 			throws SlickException {
 
-		surprise = new Image("/res/surprise.jpg");
-		
 	}
 
 	/** Affiche les choses a l'écran **/
 	public void render(GameContainer container, StateBasedGame game, Graphics g)
 			throws SlickException {
-		g.drawString("Surprise motherfucker", 100, 150);
-		surprise.draw(180, 180);
 		gig.drawScreen(player.currentPower);
 	}
 
-	
 	/** Mets a jour ( 1 update / frame ) **/
 	public void update(GameContainer container, StateBasedGame game, int delta)
 			throws SlickException {
-		if(container.getInput().isKeyPressed(Input.KEY_RIGHT))
+		if (container.getInput().isKeyPressed(Input.KEY_RIGHT))
 			player.setCurrentPower(player.currentPower + 1);
-		else if(container.getInput().isKeyPressed(Input.KEY_LEFT))
+		else if (container.getInput().isKeyPressed(Input.KEY_LEFT))
 			player.setCurrentPower(player.currentPower - 1);
 	}
 }
