@@ -26,7 +26,7 @@ public class GameState extends BasicGameState {
 
 	public void render(GameContainer container, StateBasedGame game, Graphics g)
 			throws SlickException {
-		g.drawString("Surprise motherfucker", 100, 50);
+		g.drawString("Surprise motherfucker !", 100, 50);
 		surprise.draw(180, 80);
 	}
 
