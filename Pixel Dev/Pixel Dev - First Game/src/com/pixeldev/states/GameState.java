@@ -19,19 +19,20 @@ public class GameState extends BasicGameState {
 
 	/** @return l'id du status de jeu **/
 	@Override
-	public int getID() {
+	public int getID() 
+	{
 		return ID;
 	}
 
 	/** Charge toutes les données ( Textures principalement ) **/
-	public void init(GameContainer container, StateBasedGame game)
-			throws SlickException {
+	public void init(GameContainer container, StateBasedGame game) throws SlickException 
+	{
 
 	}
 
 	/** Affiche les choses a l'écran **/
-	public void render(GameContainer container, StateBasedGame game, Graphics g)
-			throws SlickException {
+	public void render(GameContainer container, StateBasedGame game, Graphics g) throws SlickException
+	{
 		gig.drawScreen(player.currentPower);
 	}
 
