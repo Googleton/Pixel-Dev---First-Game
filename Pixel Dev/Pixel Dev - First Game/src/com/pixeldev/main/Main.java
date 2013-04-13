@@ -5,6 +5,8 @@ import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
 
+import com.pixeldev.guis.GameInputListener;
+
 public class Main extends StateBasedGame {
 	private GameState jeu;
 	private AppGameContainer container;
@@ -18,6 +20,9 @@ public class Main extends StateBasedGame {
 		if (container instanceof AppGameContainer) {
 			this.container = (AppGameContainer) container;
 		}
+		
+		container.getInput().addListener(new GameInputListener());
+		
 		jeu = new GameState();
 		container.setShowFPS(true);
 		addState(jeu);
