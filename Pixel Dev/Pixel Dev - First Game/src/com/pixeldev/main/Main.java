@@ -13,7 +13,7 @@ public class Main extends StateBasedGame {
 	private AppGameContainer container;
 
 	public Main() {
-		super("Mon premier jeu");
+		super("Pixel Dev' - Game 1");
 	} 
 
 	@Override
