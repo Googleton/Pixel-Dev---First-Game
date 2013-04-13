@@ -8,7 +8,8 @@ public abstract class Power
 	
 	public Image powerSprite;
 	
-	/** constructeur du pouvoir **/
+	/** constructeur du pouvoir
+	 * @param Image du pouvoir **/
 	public Power(Image image)
 	{
 		this.powerSprite = image;

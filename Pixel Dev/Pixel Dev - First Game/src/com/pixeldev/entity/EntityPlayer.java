@@ -5,7 +5,7 @@ import com.pixeldev.powers.Power;
 public class EntityPlayer extends Entity2 
 {
 	public Power[] powers = new Power[3];
-	public Power currentPower;
+	public int currentPower;
 	
 	public EntityPlayer(int mLife) 
 	{
@@ -15,10 +15,12 @@ public class EntityPlayer extends Entity2
 	/** change le pouvoir actuel du joueur **/
 	public void setCurrentPower(int pos)
 	{
-		if(this.powers[pos] != null)
-		{
-			this.currentPower = this.powers[pos];
-		}
+		if(pos > 2)
+			this.currentPower = 2;
+		else if(pos < 0)
+			this.currentPower = 0;
+		else
+			this.currentPower = pos;
 	}
 
 	/** met à jour l'entity **/
