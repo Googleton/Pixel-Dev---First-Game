@@ -2,13 +2,15 @@ package com.pixeldev.entity;
 
 public class Entity {
 
-	public int life;
-	public int maxLife;
-	public float movementSpeed;
-	public String name;
+	private int life;
+	private int maxLife;
+	private float movementSpeed;
+	private String entityName;
 	
-	public Entity() {
-
+	public Entity(String name) {
+		
+		this.entityName = name;
+		
 	}
 	
 	public void setLife(int l){
@@ -22,5 +24,20 @@ public class Entity {
 	public void setMovementSpeed(float mS){
 		this.movementSpeed = mS;
 	}
-
+	
+	public int getLife() {
+		return this.life;
+	}
+	
+	public int getMaxLife() {
+		return this.maxLife;
+	}
+	
+	public float getMovementSpeed() {
+		return this.movementSpeed;
+	}
+	
+	public String getEntityName() {
+		return this.entityName;
+	}
 }
