@@ -24,6 +24,6 @@ public abstract class Entity2
 		return this.isDead || this.life <= 0;
 	}
 	
-	/**  met à jour l'entity **/
+	/** met à jour l'entity **/
 	public abstract void onUpdate();
 }

@@ -10,7 +10,6 @@ import com.pixeldev.states.GameState;
 
 public class Main extends StateBasedGame {
 	private GameState jeu;
-	@SuppressWarnings("unused")
 	private AppGameContainer container;
 
 	public Main() {
