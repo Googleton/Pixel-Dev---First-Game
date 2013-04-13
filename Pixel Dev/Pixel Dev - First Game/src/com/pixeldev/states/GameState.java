@@ -12,11 +12,13 @@ public class GameState extends BasicGameState {
 	
 	public Image surprise;
 
+	/** @return l'id du status de jeu **/
 	@Override
 	public int getID() {
 		return ID;
 	}
 
+	/** Charge toutes les données ( Textures principalement ) **/
 	public void init(GameContainer container, StateBasedGame game)
 			throws SlickException {
 
@@ -24,12 +26,15 @@ public class GameState extends BasicGameState {
 		
 	}
 
+	/** Affiche les choses a l'écran **/
 	public void render(GameContainer container, StateBasedGame game, Graphics g)
 			throws SlickException {
 		g.drawString("Surprise motherfucker", 100, 50);
 		surprise.draw(180, 80);
 	}
 
+	
+	/** Mets a jour ( 1 update / frame ) **/
 	public void update(GameContainer container, StateBasedGame game, int delta)
 			throws SlickException {
 
