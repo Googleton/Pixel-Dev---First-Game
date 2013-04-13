@@ -2,14 +2,14 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="C:/Users/Gugu/Desktop/Autre/slick.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Gugu/Desktop/Autre/lwjgl-2.8.5/jar/jinput.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Gugu/Desktop/Autre/lwjgl-2.8.5/jar/lwjgl.jar">
+	<classpathentry kind="lib" path="libs/jinput.jar"/>
+	<classpathentry kind="lib" path="libs/kryo-2.20.jar"/>
+	<classpathentry kind="lib" path="libs/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="libs/lwjgl.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/Gugu/Desktop/Autre/lwjgl-2.8.5/native/windows"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Pixel Dev - First Game/libs/native/windows"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Gugu/Desktop/Autre/lwjgl-2.8.5/jar/lwjgl_util.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Gugu/Desktop/Autre/kryonet-2.20/jars/production/kryo-2.20.jar"/>
+	<classpathentry kind="lib" path="libs/slick.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
