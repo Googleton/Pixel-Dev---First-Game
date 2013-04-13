@@ -6,6 +6,7 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
 
 import com.pixeldev.guis.GameInputListener;
+import com.pixeldev.states.GameState;
 
 public class Main extends StateBasedGame {
 	private GameState jeu;
