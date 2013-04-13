@@ -18,11 +18,13 @@ public class GameState extends BasicGameState {
 	private GuiInGame gig = new GuiInGame();
 	public EntityPlayer player = new EntityPlayer(20);
 
+	/** @return l'id du status de jeu **/
 	@Override
 	public int getID() {
 		return ID;
 	}
 
+	/** Charge toutes les données ( Textures principalement ) **/
 	public void init(GameContainer container, StateBasedGame game)
 			throws SlickException {
 
@@ -30,6 +32,7 @@ public class GameState extends BasicGameState {
 		
 	}
 
+	/** Affiche les choses a l'écran **/
 	public void render(GameContainer container, StateBasedGame game, Graphics g)
 			throws SlickException {
 		g.drawString("Surprise motherfucker", 100, 150);
@@ -37,6 +40,8 @@ public class GameState extends BasicGameState {
 		gig.drawScreen(player.currentPower);
 	}
 
+	
+	/** Mets a jour ( 1 update / frame ) **/
 	public void update(GameContainer container, StateBasedGame game, int delta)
 			throws SlickException {
 		if(container.getInput().isKeyPressed(Input.KEY_RIGHT))

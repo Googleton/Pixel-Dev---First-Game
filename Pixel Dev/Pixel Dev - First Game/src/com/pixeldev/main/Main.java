@@ -16,6 +16,7 @@ public class Main extends StateBasedGame {
 		super("Pixel Dev' - Game 1");
 	} 
 
+	/** Charge la liste des états possibles du jeu ( Menu, InGame )**/
 	@Override
 	public void initStatesList(GameContainer container) throws SlickException {
 		if (container instanceof AppGameContainer) {
@@ -29,6 +30,7 @@ public class Main extends StateBasedGame {
 		addState(jeu);
 	}
 
+	/** Fonction principale du jeu **/
 	public static void main(String[] args) {
 		try {
 			AppGameContainer container = new AppGameContainer(new Main());
