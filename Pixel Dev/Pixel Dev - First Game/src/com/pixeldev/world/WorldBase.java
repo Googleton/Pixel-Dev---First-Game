@@ -1,7 +1,6 @@
 package com.pixeldev.world;
 
 
-public class World 
-{
+public class WorldBase {
   public Map[] maps = new Map[10];
 }
