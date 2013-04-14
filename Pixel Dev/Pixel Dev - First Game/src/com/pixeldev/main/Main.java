@@ -26,7 +26,7 @@ public class Main extends StateBasedGame {
 		container.getInput().addListener(new GameInputListener());
 		
 		jeu = new GameState();
-		container.setShowFPS(true);
+		container.setShowFPS(false);
 		addState(jeu);
 	}
 
