@@ -7,9 +7,11 @@ import org.newdawn.slick.state.StateBasedGame;
 
 import com.pixeldev.guis.GameInputListener;
 import com.pixeldev.states.GameState;
+import com.pixeldev.states.MenuState;
 
 public class Main extends StateBasedGame {
 	private GameState jeu;
+	private MenuState menu;
 	private AppGameContainer container;
 
 	public Main() {
@@ -25,8 +27,10 @@ public class Main extends StateBasedGame {
 		
 		container.getInput().addListener(new GameInputListener());
 		
+		menu = new MenuState();
 		jeu = new GameState();
 		container.setShowFPS(false);
+		addState(menu);
 		addState(jeu);
 	}
 
