@@ -68,5 +68,10 @@ public class EntityPlayer extends Entity2
 			throws SlickException {
 		g.drawString("O", x, y);
 	}
+	
+	/** Ajoute de la money au player. **/
+	public void giveMoney(int moneyToGive){
+		money += moneyToGive;
+	}
 
 }
