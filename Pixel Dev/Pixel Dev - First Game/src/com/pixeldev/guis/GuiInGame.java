@@ -2,9 +2,14 @@ package com.pixeldev.guis;
 
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.Rectangle;
+
+import com.pixeldev.entity.EntityPlayer;
+import com.pixeldev.states.GameState;
 
 public class GuiInGame {
 	private Image unSelected, selected;
+
 
 	/**
 	 * ce qui est à afficher à l'écran

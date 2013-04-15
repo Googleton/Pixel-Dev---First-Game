@@ -68,6 +68,10 @@ public class GameState extends BasicGameState {
 		else if (container.getInput().isKeyPressed(Input.KEY_LEFT))
 			player.setCurrentPower(player.currentPower - 1);
 		
+		if (container.getInput().isKeyPressed(Input.KEY_ESCAPE)){
+			container.exit();
+		}
+		
 		player.update(container, game, delta);
 	}
 }
