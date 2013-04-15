@@ -1,8 +1,12 @@
 package com.pixeldev.entity;
 
+import javax.swing.text.Position;
+
+import org.lwjgl.input.Keyboard;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.Vector2f;
 import org.newdawn.slick.state.StateBasedGame;
 
 import com.pixeldev.powers.Power;
@@ -11,6 +15,8 @@ public class EntityPlayer extends Entity2
 {
 	public Power[] powers = new Power[3];
 	public int currentPower;
+	public int x;
+	public int y;
 	
 	public int money = 0;
 	
@@ -23,8 +29,8 @@ public class EntityPlayer extends Entity2
 	@Override
 	public void init(GameContainer container, StateBasedGame game)
 			throws SlickException {
-		// TODO Auto-generated method stub
-		
+		x = 100;
+		y = 100;
 	}
 	
 	/** change le pouvoir actuel du joueur **/
@@ -42,15 +48,25 @@ public class EntityPlayer extends Entity2
 	@Override
 	public void update(GameContainer container, StateBasedGame game, int delta)
 			throws SlickException {
-		// TODO Auto-generated method stub
-		
+		if(Keyboard.isKeyDown(Keyboard.KEY_D)){
+			x++;
+		}
+		if(Keyboard.isKeyDown(Keyboard.KEY_Q)){
+			x--;
+		}
+		if(Keyboard.isKeyDown(Keyboard.KEY_Z)){
+			y--;
+		}
+		if(Keyboard.isKeyDown(Keyboard.KEY_S)){
+			y++;
+		}
 	}
 	
 	/** Permet d'afficher les textures liées a l'entitée, ou du texte. **/
 	@Override
 	public void render(GameContainer container, StateBasedGame game, Graphics g)
 			throws SlickException {
-		
+		g.drawString("O", x, y);
 	}
 
 }
