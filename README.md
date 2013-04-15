@@ -1,6 +1,9 @@
 Pixel-Dev---First-Game
 ======================
 
+## ATTENTION !
+Si vous avez l'erreure "Rejected-Non fast forward" lorsque vous tentez de faire un commit / push, lancer un pull pour être a jour, puis réessayez.
+
 ###13/04
 
 (+) Classe Player
@@ -18,12 +21,12 @@ Pixel-Dev---First-Game
 
 (M) Changement de l'emplacement et de la police de l'afficheur de FPS
 
-(TD) Mouvements du joueur
-
-(TD) Collisions
+(+) Mouvements du joueur
 
 
 ###15/04
+
+(TD) Collisions
 
 ###16/04
 
