@@ -70,7 +70,7 @@ public class EntityPlayer extends Entity2
 	}
 	
 	/** Ajoute de la money au player. **/
-	public void giveMoney(int moneyToGive){
+	public void addMoney(int moneyToGive){
 		money += moneyToGive;
 	}
 

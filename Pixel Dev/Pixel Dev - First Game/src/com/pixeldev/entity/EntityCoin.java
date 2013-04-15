@@ -21,7 +21,7 @@ public class EntityCoin extends Entity2{
 	
 	/** Méthode appelée lors d'une collision pour ajouter l'argent au player **/
 	public void giveMoney(EntityPlayer player){
-		player.giveMoney(moneyValue);
+		player.addMoney(moneyValue);
 	}
 
 	@Override
