@@ -56,6 +56,7 @@ public class GameState extends BasicGameState {
 	{
 		font2.drawString( 1100, 50, "FPS : " + container.getFPS());
 		gig.drawScreen(player.currentPower);
+		player.render(container, game, g);
 //		g.drawString(String.valueOf(player.money), , y)
 	}
 
@@ -66,5 +67,7 @@ public class GameState extends BasicGameState {
 			player.setCurrentPower(player.currentPower + 1);
 		else if (container.getInput().isKeyPressed(Input.KEY_LEFT))
 			player.setCurrentPower(player.currentPower - 1);
+		
+		player.update(container, game, delta);
 	}
 }
