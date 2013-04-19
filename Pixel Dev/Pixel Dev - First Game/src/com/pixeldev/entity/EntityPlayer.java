@@ -62,6 +62,20 @@ public class EntityPlayer extends Entity2
 		if(Keyboard.isKeyDown(Keyboard.KEY_S)){
 			y++;
 		}
+		//gaucher
+		
+	/**	if(Keyboard.isKeyDown(Keyboard.KEY_RIGHT)){
+			x++;
+		}
+		if(Keyboard.isKeyDown(Keyboard.KEY_LEFT)){
+			x--;
+		}
+		if(Keyboard.isKeyDown(Keyboard.KEY_UP)){
+			y--;
+		}
+		if(Keyboard.isKeyDown(Keyboard.KEY_DOWN)){
+			y++;
+		} **/
 	}
 	
 	/** Permet d'afficher les textures liées a l'entitée, ou du texte. **/
